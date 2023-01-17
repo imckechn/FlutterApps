@@ -60,25 +60,31 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromARGB(255, 24, 84, 22),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(50.0),
-          child: Text('This is the bottom of the app bar'),
+          child: Text('Ian McKechnie'),
         ),
-        centerTitle: false,
+        centerTitle: true,
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
               'Hello World. This app was built by Ian McKechnie, over the course of one day',
               textAlign: TextAlign.justify,
               overflow: TextOverflow.ellipsis,
-              softWrap: true,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text('Button'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.orange,
+                shadowColor: Color.fromARGB(255, 0, 0, 0),
+                elevation: 5,
+              ),
             ),
           ],
         ),
