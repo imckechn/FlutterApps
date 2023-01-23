@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "89ad71bbd7773ba0e6db01433391be754ce86061711999d3f4603bb1699b1500"
+build_start_time: [1673897658, 473971843]
+build_end_time: [1673897658, 494158983]
+inputs:
+  ? "/Users/ian/Documents/UOGUELPH/Classes/Winter2023/cis4030/weeklyAssignments/week0/my_app/macos/Flutter/GeneratedPluginRegistrant.swift"
+  : !private [1673897649, 635967254]
+  "/Users/ian/Documents/UOGUELPH/Classes/Winter2023/cis4030/weeklyAssignments/week0/my_app/macos/Runner/AppDelegate.swift": !private [1671130240, 0]
+  "/Users/ian/Documents/UOGUELPH/Classes/Winter2023/cis4030/weeklyAssignments/week0/my_app/macos/Runner/MainFlutterWindow.swift": !private [1671130240, 0]

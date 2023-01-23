@@ -1,20 +1,22 @@
+#Week0
+
 # Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+week0/*.class
+week0/*.log
+week0/*.pyc
+week0/*.swp
+week0/.DS_Store
+week0/.atom/
+week0/.buildlog/
+week0/.history
+week0/.svn/
+week0/migrate_working_dir/
 
 # IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+week0/*.iml
+week0/*.ipr
+week0/*.iws
+week0/.idea/
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
@@ -22,23 +24,71 @@ migrate_working_dir/
 #.vscode/
 
 # Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
-/build/
+week0/**/doc/api/
+week0/**/ios/Flutter/.last_build_id
+week0/.dart_tool/
+week0/.flutter-plugins
+week0/.flutter-plugins-dependencies
+week0/.packages
+week0/.pub-cache/
+week0/.pub/
+week0/build/
 
 # Symbolication related
-app.*.symbols
+week0/app.*.symbols
 
 # Obfuscation related
-app.*.map.json
+week0/app.*.map.json
 
 # Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+week0/android/app/debug
+week0/android/app/profile
+week0/android/app/release
+
+
+#week1
+
+# Miscellaneous
+week1/*.class
+week1/*.log
+week1/*.pyc
+week1/*.swp
+week1/.DS_Store
+week1/.atom/
+week1/.buildlog/
+week1/.history
+week1/.svn/
+week1/migrate_working_dir/
+
+# IntelliJ related
+week1/*.iml
+week1/*.ipr
+week1/*.iws
+week1/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+week1/**/doc/api/
+week1/**/ios/Flutter/.last_build_id
+week1/.dart_tool/
+week1/.flutter-plugins
+week1/.flutter-plugins-dependencies
+week1/.packages
+week1/.pub-cache/
+week1/.pub/
+week1/build/
+
+# Symbolication related
+week1/app.*.symbols
+
+# Obfuscation related
+week1/app.*.map.json
+
+# Android Studio will place build artifacts here
+week1/android/app/debug
+week1/android/app/profile
+week1/android/app/release
