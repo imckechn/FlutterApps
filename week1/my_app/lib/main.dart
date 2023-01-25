@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -57,39 +59,78 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        backgroundColor: Color.fromARGB(255, 24, 84, 22),
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(50.0),
-          child: Text('Ian McKechnie'),
+        appBar: AppBar(
+          title: const Text('Ian McKechnie'),
         ),
-        centerTitle: true,
-      ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          children: <Widget>[
-            const Text(
-              'Hello World. This app was built by Ian McKechnie, over the course of one day',
-              textAlign: TextAlign.justify,
-              overflow: TextOverflow.ellipsis,
+        body: ListView(children: [
+          // ignore: prefer_const_literals_to_create_immutables
+          Text('Answer'),
+          Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+            Row(
+              children: [
+                Expanded(
+                  flex: 3,
+                  child: SizedBox(
+                    width: 100,
+                  )
+                  FloatingActionButton(
+                      onPressed: () => {print("Clear")},
+                      child: const Text('Clear')),
+                      width: 
+                ),
+                Expanded(
+                  flex: 1,
+                  child: FloatingActionButton(
+                      onPressed: () => {print("Divide")},
+                      child: const Text('/')),
+                ),
+              ],
             ),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Button'),
-              autofocus: true,
-              style: ElevatedButton.styleFrom(
-                primary: Colors.orange,
-                shadowColor: Color.fromARGB(255, 0, 0, 0),
-                elevation: 5,
-              ),
+            Row(
+              children: [
+                FloatingActionButton(
+                    onPressed: () => {print("7")}, child: const Text('7')),
+                FloatingActionButton(
+                    onPressed: () => {print("8")}, child: const Text('8')),
+                FloatingActionButton(
+                    onPressed: () => {print("9")}, child: const Text('9')),
+                FloatingActionButton(
+                    onPressed: () => {print("*")}, child: const Text('*')),
+              ],
             ),
-          ],
-        ),
-      ),
-    );
+            Row(
+              children: [
+                FloatingActionButton(
+                    onPressed: () => {print("4")}, child: const Text('4')),
+                FloatingActionButton(
+                    onPressed: () => {print("5")}, child: const Text('5')),
+                FloatingActionButton(
+                    onPressed: () => {print("6")}, child: const Text('6')),
+                FloatingActionButton(
+                    onPressed: () => {print("-")}, child: const Text('-')),
+              ],
+            ),
+            Row(
+              children: [
+                FloatingActionButton(
+                    onPressed: () => {print("1")}, child: const Text('1')),
+                FloatingActionButton(
+                    onPressed: () => {print("2")}, child: const Text('2')),
+                FloatingActionButton(
+                    onPressed: () => {print("3")}, child: const Text('3')),
+                FloatingActionButton(
+                    onPressed: () => {print("+")}, child: const Text('+')),
+              ],
+            ),
+            Row(
+              children: [
+                FloatingActionButton(
+                    onPressed: () => {print("0")}, child: const Text('0')),
+                FloatingActionButton(
+                    onPressed: () => {print("=")}, child: const Text('=')),
+              ],
+            ),
+          ])
+        ]));
   }
 }
