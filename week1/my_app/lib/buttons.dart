@@ -24,12 +24,12 @@ class MyButton extends StatelessWidget {
         child: ClipRRect(
           // borderRadius: BorderRadius.circular(25),
           child: Container(
-            color: color,
+            color: Colors.blue,
             child: Center(
               child: Text(
                 buttonText,
                 style: TextStyle(
-                  color: textColor,
+                  color: Colors.black,
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                 ),
