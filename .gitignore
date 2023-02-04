@@ -92,3 +92,52 @@ week1/app.*.map.json
 week1/android/app/debug
 week1/android/app/profile
 week1/android/app/release
+
+
+
+#week2
+
+# Miscellaneous
+week2/*.class
+week2/*.log
+week2/*.pyc
+week2/*.swp
+week2/.DS_Store
+week2/.atom/
+week2/.buildlog/
+week2/.history
+week2/.svn/
+week2/migrate_working_dir/
+
+# IntelliJ related
+week2/*.iml
+week2/*.ipr
+week2/*.iws
+week2/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+week2/**/doc/api/
+week2/**/ios/Flutter/.last_build_id
+week2/.dart_tool/
+week2/.flutter-plugins
+week2/.flutter-plugins-dependencies
+week2/.packages
+week2/.pub-cache/
+week2/.pub/
+week2/build/
+
+# Symbolication related
+week2/app.*.symbols
+
+# Obfuscation related
+week2/app.*.map.json
+
+# Android Studio will place build artifacts here
+week2/android/app/debug
+week2/android/app/profile
+week2/android/app/release
