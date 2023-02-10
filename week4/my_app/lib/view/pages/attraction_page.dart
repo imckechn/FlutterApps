@@ -3,6 +3,31 @@ import 'package:flutter/material.dart';
 import '../../core/models/attraction.dart';
 import './../../attractions_notifier.dart';
 
+class ChildPageState extends State<ChildPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.teal,
+      width: double.infinity,
+      alignment: Alignment.center,
+      child: ElevatedButton(
+        child: Text("Call method in parent"),
+        onPressed: () => widget.function(), // calls method in parent
+      ),
+    );
+  }
+}
+
+class ChildPage extends StatefulWidget {
+  final VoidCallback function;
+
+  ChildPage({Key? key, required this.function}) : super(key: key);
+
+  @override
+  ChildPageState createState() => ChildPageState();
+}
+
+
 void myTapCallback(Attraction elem) {
   String title = elem.title;
 
@@ -14,6 +39,9 @@ void myTapCallback(Attraction elem) {
 class AttractionPage extends StatelessWidget {
   Attraction attraction;
   AttractionPage({required this.attraction});
+
+  final GlobalKey<ChildPageState> _key = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -133,6 +161,11 @@ class AttractionPage extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {
                       myTapCallback(attraction);
+                      final snackBar = SnackBar(
+                        content: Text('Added ${attraction.title} to schedule'),
+                      );
+
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
                     },
                     child: Text("Add"),
                   ),
