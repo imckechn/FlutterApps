@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 
 import '../../core/models/attraction.dart';
+import './../../attractions_notifier.dart';
+
+void myTapCallback(Attraction elem) {
+  String title = elem.title;
+
+  final notifier = Attractions();
+  notifier.add(elem);
+  //print('user tapped on $title');
+}
 
 class AttractionPage extends StatelessWidget {
   Attraction attraction;
@@ -51,7 +60,6 @@ class AttractionPage extends StatelessWidget {
                     ),
                     textAlign: TextAlign.start,
                   ),
-                  
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -59,7 +67,10 @@ class AttractionPage extends StatelessWidget {
                         Card(
                           child: Padding(
                             padding: const EdgeInsets.all(5.0),
-                            child: Text(attraction.categories[i], style: TextStyle(fontSize: 18),),
+                            child: Text(
+                              attraction.categories[i],
+                              style: TextStyle(fontSize: 18),
+                            ),
                           ),
                         ),
                     ],
@@ -80,7 +91,7 @@ class AttractionPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
-                   SizedBox(
+                  SizedBox(
                     height: 20,
                   ),
                   Text(
@@ -119,8 +130,12 @@ class AttractionPage extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  
-                  ElevatedButton(onPressed: () {}, child: Text("Add"),),
+                  ElevatedButton(
+                    onPressed: () {
+                      myTapCallback(attraction);
+                    },
+                    child: Text("Add"),
+                  ),
                 ],
               ),
             ),
