@@ -9,7 +9,7 @@ class BottomTabBarScaffold extends StatefulWidget {
 }
 
 class _BottomTabBarScaffoldState extends State<BottomTabBarScaffold> {
-    List<String> categories = [
+  List<String> categories = [
     "Picnic",
     'Playground',
     'Hiking',
@@ -36,7 +36,7 @@ class _BottomTabBarScaffoldState extends State<BottomTabBarScaffold> {
 
   Map<String, bool> get categoryAttractions {
     Map<String, bool> tempMap = {};
-    for(int i = 0; i < categories.length; i++) {
+    for (int i = 0; i < categories.length; i++) {
       tempMap[categories[i]] = categories_bool[i];
     }
     return tempMap;
@@ -44,12 +44,11 @@ class _BottomTabBarScaffoldState extends State<BottomTabBarScaffold> {
 
   void updateCategories(List<bool> newCategories) {
     setState(() {
-      for(int i = 0; i < newCategories.length; i++) {
-              categories_bool[i] = newCategories[i];
-            }
+      for (int i = 0; i < newCategories.length; i++) {
+        categories_bool[i] = newCategories[i];
+      }
     });
   }
-
 
   int _selectedIndex = 0;
 
@@ -58,8 +57,6 @@ class _BottomTabBarScaffoldState extends State<BottomTabBarScaffold> {
       _selectedIndex = index;
     });
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -145,16 +142,15 @@ class _FilterDialogState extends State<FilterDialog> {
 
   @override
   Widget build(BuildContext context) {
-
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
 
     double minSize;
-      if (width < height) {
-        minSize = width;
-      } else {
-        minSize = height;
-      }
+    if (width < height) {
+      minSize = width;
+    } else {
+      minSize = height;
+    }
 
     return AlertDialog(
       title: Text("Adjust Filters"),

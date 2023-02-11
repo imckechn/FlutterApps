@@ -1,4 +1,3 @@
-
 class Attraction {
   final String title;
   final String address;
@@ -15,5 +14,4 @@ class Attraction {
     this.isFree = true,
     required this.description,
   });
-  
 }

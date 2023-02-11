@@ -11,7 +11,7 @@ class AttractionListPage extends StatelessWidget {
   bool isShown(Attraction attraction) {
     bool val = true;
     attraction.categories.forEach((element) {
-      if(categoriesToShow[element] == false){
+      if (categoriesToShow[element] == false) {
         val = false;
       }
       //if (!categoriesToShow[element]) return false;
@@ -38,7 +38,6 @@ class AttractionListPage extends StatelessWidget {
           child: ListView.builder(
             itemBuilder: (context, index) {
               if (isShown(attractions[index])) {
-
                 return AttractionCard(
                   index: index,
                   attractions: attractions,

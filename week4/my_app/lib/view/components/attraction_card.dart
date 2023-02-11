@@ -22,12 +22,12 @@ class AttractionCard extends StatelessWidget {
         },
         child: Container(
           child: Card(
-              elevation: 20,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: _buildAttractionContent(),
+            elevation: 20,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
             ),
+            child: _buildAttractionContent(),
+          ),
         ),
       ),
     );
@@ -46,7 +46,7 @@ class AttractionCard extends StatelessWidget {
         ),
         SizedBox(
           height: 220,
-           child: Hero(
+          child: Hero(
             tag: attractions[index].title,
             child: Image.network(
               attractions[index].imageURL,
