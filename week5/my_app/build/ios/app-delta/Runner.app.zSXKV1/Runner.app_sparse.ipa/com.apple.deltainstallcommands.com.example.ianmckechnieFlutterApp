@@ -1,0 +1,18 @@
+ipaD
+1
+1 1.0.0
++Frameworks/App.framework/App
++Frameworks/App.framework/_CodeSignature/CodeResources
++Frameworks/App.framework/flutter_assets/AssetManifest.json
++Frameworks/App.framework/flutter_assets/FontManifest.json
++Frameworks/App.framework/flutter_assets/NOTICES.Z
++Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag
++Info.plist
++PkgInfo
++Runner
++_CodeSignature/CodeResources
+xEOF
+#CreateSparseIPA UUID: F66C98E2-A796-3754-AC6D-D20FD0B084BC
+#Bundle id: com.example.ianmckechnieFlutterApp
+#Old bundle version: 1 1.0.0
+#New bundle version: 1 1.0.0
